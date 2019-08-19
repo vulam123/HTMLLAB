@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 20px;
+        }
+
+        .nav-link {
+            color: white !important;
+        }
+
+        .logo {
+            margin-right: 20px;
+            height: 100%
+        }
+
+        #sidebar {
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            transition: all 0.3s;
+            padding-left: 40px;
+            padding-top: 0px;
+        }
+
+        a {
+            color: gray !important;
+        }
+
+        .list-unstyled li {
+            height: 34px;
+            border-bottom: 1px solid rgba(0, 0, 0, .125);
+            margin-bottom: 15px;
+        }
+
+        .list-unstyled {
+            border-bottom: 4px solid rgba(0, 0, 0, .125);
+        }
+
+        .list-unstyled li a {
+            margin-left: 5%
+        }
+
+        .info-title {
+            font-size: 30px;
+        }
+
+        .content {
+            padding-top: 0px;
+        }
+
+        .left-menu {
+            border-top: 4px solid #3ccff2;
+            padding-top: 32px;
+        }
+
+        .content {
+            /* border-top: 6px solid #3ccff2;          */
+            margin-left: 0%;
+        }
+
+        .content-header {
+            border-bottom: 1px solid rgba(0, 0, 0, .125);
+        }
+
+        .submit {
+            text-align: right;
+            padding-right: 2% !important;
+            padding-top: 10px;
+        }
+
+        .info-name {
+            font-size: 20px;
+        }
+
+        .content-div {
+            width: 98%;
+            border-top: 4px solid #3ccff2;
+        }
+
+        .topnav-right {
+            float: right;
+            margin-right: 3%;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 5px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark">
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item logo">
+                <img src="image/logo.png" />
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">List user</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Profile</a>
+            </li>
+        </ul>
+
+    </nav>
+    <div class="row">
+        <div class="col-6 col-md-6" style="padding-left: 2%;">
+            <h3>Trang cá nhân của Bùi Quang Huy</h3>
+        </div>
+        <div class="col-6 cold-md-6">
+            <div class="topnav">
+                <div class="topnav-right">
+                    <a href="#"><i class="fas fa-home"></i>Home</a>
+                    <a href="#">></a>
+                    <a href="#">Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2 col-md-2 left-menu">
+            <nav id="sidebar">
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <i class="fas fa-book-reader"></i><a href="#">Thông tin chung</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-file-alt"></i><a href="#">Thông tin công việc</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i><a href="#">Thông tin liên hệ</a>
+                    </li>
+                </ul>
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <i class="fas fa-home"></i><a href="#">Thông tin gia đình</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-leanpub"></i><a href="#">Quá trình học tập</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-certificate"></i><a href="#">Chứng chỉ</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-qrcode"></i><a href="#">Scan giấy tờ</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-plane"></i><a href="#">Onsite</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-blender-phone"></i><a href="#">Skill Sheet</a>
+                    </li>
+                </ul>
+
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <i class="fas fa-laptop-medical"></i><a href="#">Thông tin y tế</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-thumbs-up"></i><a href="#">Tính cách sở thích</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-award"></i><a href="#">Giải thưởng</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-tshirt"></i><a href="#">Số đo trang phục</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-galactic-republic"></i><a href="#">Thông tin chính trị</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-shield-alt"></i><a href="#">Thông tin quân nhân</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-cog"></i><a href="#">Setting</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+        <div class="col-10 col-md-10 content">
+            <div class="content-div">
+                <div class="row content-header">
+                    <div class="col-6 col-md-6">
+                        <p class="info-title">Thông tin cá nhân</p>
+                    </div>
+                    <div class="col-6 col-md-6 submit"><button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 20px;border-bottom: 1px solid gray;">
+                    <div class="col-2 col-md-2"></div>
+                    <div class="col-5 col-md-5">
+                        <div class="form-group row">
+                            <label for="name" class="col-sm-2 col-form-label">Họ và tên</label>
+                            <input type="text" class="form-control col-sm-9" id="name" placeholder="Họ tên">
+                        </div>
+                        <div class="form-group row">
+                            <label for="sex" class="col-sm-2 col-form-label">Giới tính</label>
+                            <select id="sex" class="form-control col-sm-9">
+                                <option selected>Nam</option>
+                                <option>Nữ</option>
+                            </select>
+                        </div>
+                        <div class="form-group row">
+                            <label for="dob" class="col-sm-2 col-form-label">Ngày sinh</label>
+                            <input type="date" class="form-control col-sm-9" id="dob" placeholder="dd-mm-yyyy">
+                        </div>
+                        <div class="form-group row" style="margin-top: 18%;">
+                            <label for="cmt" class="col-sm-2 col-form-label">Số CMT</label>
+                            <input type="text" class="form-control col-sm-9" id="cmt">
+                        </div>
+                        <div class="form-group row">
+                            <label for="cmtdate" class="col-sm-2 col-form-label">Ngày cấp</label>
+                            <input type="date" class="form-control col-sm-9" id="cmtdate" placeholder="dd-mm-yyyy">
+                        </div>
+                        <div class="form-group row">
+                            <label for="place" class="col-sm-2 col-form-label">Nơi cấp</label>
+                            <input type="text" class="form-control col-sm-9" id="place">
+                        </div>
+                    </div>
+                    <div class="col-5 col-md-5" style="text-align: center">
+                        <img style="max-width: 40%;border-radius: 50%;height: auto;" src="image/giphy.gif"
+                            class="col-sm-10" alt="Cinque Terre">
+                        <div class="form-group row" style="margin-top: 5.5%;">
+                            <label for="passport" class="col-sm-3 col-form-label">Hộ chiếu</label>
+                            <input type="text" class="form-control col-sm-8" id="passport">
+                        </div>
+                        <div class="form-group row">
+                            <label for="place" class="col-sm-3 col-form-label">Nơi cấp</label>
+                            <input type="text" class="form-control col-sm-8" id="place">
+                        </div>
+                        <div class="form-group row">
+                            <label for="passportdate1" class="col-sm-3 col-form-label">Ngày cấp</label>
+                            <input type="date" class="form-control col-sm-8" id="passportdate1"
+                                placeholder="dd-mm-yyyy">
+                        </div>
+                        <div class="form-group row">
+                            <label for="passportdate" class="col-sm-3 col-form-label">Ngày hết hạn</label>
+                            <input type="date" class="form-control col-sm-8" id="passportdate2"
+                                placeholder="dd-mm-yyyy">
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-2 col-md-2"></div>
+                    <div class="col-5 col-md-5">
+                        <div class="form-group row">
+                            <label for="dt" class="col-sm-2 col-form-label">Dân tộc</label>
+                            <input type="text" class="form-control col-sm-9" id="dt">
+                        </div>
+                        <div class="form-group row">
+                            <label for="martital" class="col-sm-2 col-form-label">Tình trạng hôn nhân</label>
+                            <select id="martital" class="form-control col-sm-9">
+                                <option selected>Có</option>
+                                <option>Không</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-5 col-md-5" style="text-align: center">
+                        <div class="form-group row">
+                            <label for="tongiao" class="col-sm-3 col-form-label">Tôn giáo</label>
+                            <select id="tongiao" class="form-control col-sm-8">
+                                <option selected>Có</option>
+                                <option>Không</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-7 col-md-7">
+                        <p class="info-title">Thông tin cá nhân</p>
+                        <div class="row">
+                            <div class="col-1 col-md-1"></div>
+                            <label for="tongiao" class="col-sm-2 col-form-label">Team:</label>
+                            <select id="tongiao" class="form-control col-sm-3">
+                                <option selected>Phòng phát triển số 5</option>
+                                <option>Phòng phát triển số 6</option>
+                            </select>
+                            <label for="role" class="col-sm-2 col-form-label">Chức vụ</label>
+                            <input type="text" class="form-control col-sm-3" id="role">
+
+                        </div>
+                    </div>
+                    <div class="col-5 col-md-5">
+                        <p class="info-title">Vai trò đặc biệt</p>
+                        <p class="info-title">PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
